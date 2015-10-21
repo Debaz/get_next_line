@@ -6,7 +6,7 @@
 /*   By: Debaz <klescaud@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/20 16:45:40 by Debaz             #+#    #+#             */
-/*   Updated: 2015/10/21 08:27:48 by Debaz            ###   ########.fr       */
+/*   Updated: 2015/10/21 08:56:43 by klescaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,8 @@
 # define GET_NEXT_LINE_H
 
 # include <libft.h>
-//# include <fcntl.h> /* For open() */
-# include <sys/types.h> /* For read() */
-# include <sys/uio.h> /* For read() */
-# include <unistd.h> /* For read(), a delete car deja inclus dans libft */
+# include <sys/types.h>
+# include <sys/uio.h>
 
 # define BUFF_SIZE 32
 

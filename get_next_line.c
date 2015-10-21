@@ -6,7 +6,7 @@
 /*   By: Debaz <klescaud@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/20 16:44:57 by Debaz             #+#    #+#             */
-/*   Updated: 2015/10/21 08:51:06 by Debaz            ###   ########.fr       */
+/*   Updated: 2015/10/21 08:55:48 by klescaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*extend_buffer(int const fd, char *buf, int *ret)
 {
-	char	tmp[BUFF_SIZE+ 1];
+	char	tmp[BUFF_SIZE + 1];
 	char	tmp2;
 
 	*ret = read(fd, tmp, BUFF_SIZE);
