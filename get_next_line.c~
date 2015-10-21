@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Debaz <klescaud@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/20 16:45:40 by Debaz             #+#    #+#             */
-/*   Updated: 2015/10/21 08:27:48 by Debaz            ###   ########.fr       */
+/*   Created: 2015/10/20 16:44:57 by Debaz             #+#    #+#             */
+/*   Updated: 2015/10/21 07:35:46 by Debaz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include <get_next_line.h>
 
-# include <libft.h>
-//# include <fcntl.h> /* For open() */
-# include <sys/types.h> /* For read() */
-# include <sys/uio.h> /* For read() */
-# include <unistd.h> /* For read(), a delete car deja inclus dans libft */
+int		get_next_line(int fd, char **line)
+{
+	int		ret;
 
-# define BUFF_SIZE 32
-
-int		get_next_line(int fd, char **line);
-
-#endif
+	ret = 1;
+	return (ret);
+}
