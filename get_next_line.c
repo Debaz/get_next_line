@@ -6,7 +6,7 @@
 /*   By: Debaz <klescaud@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/20 16:44:57 by Debaz             #+#    #+#             */
-/*   Updated: 2015/10/21 08:55:48 by klescaud         ###   ########.fr       */
+/*   Updated: 2015/10/21 09:43:47 by klescaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*extend_buffer(int const fd, char *buf, int *ret)
 {
 	char	tmp[BUFF_SIZE + 1];
-	char	tmp2;
+	char	*tmp2;
 
 	*ret = read(fd, tmp, BUFF_SIZE);
 	tmp[*ret] = '\0';
@@ -33,7 +33,7 @@ int		get_next_line(int fd, char **line)
 
 	if (!line || fd < 0)
 		return (-1);
-	if (buff[0] == '\0')
+	if (buf[0] == '\0')
 		buf = ft_strnew(0);
 	while (ret > 0)
 	{
