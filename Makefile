@@ -6,7 +6,7 @@
 #    By: Debaz <klescaud@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/10/21 07:41:05 by Debaz             #+#    #+#              #
-#    Updated: 2015/10/21 09:36:12 by klescaud         ###   ########.fr        #
+#    Updated: 2015/10/21 19:01:22 by Debaz            ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -29,6 +29,8 @@ clean:
 	@make fclean -C ./libft/
 
 fclean: clean
+	@echo "Supression du fichier de test ..."
 	@rm Testfile
+	@echo "Done !"
 
 re: fclean all

@@ -2,3 +2,4 @@ Ceci est un fichier de test.
 Il contient 5 lignes, toutes d'une longueur differente.
 Is it a bird, is it a plane ? No, it's Superman !
 Bien lourd est le parpaing de la realite sur la tartelette aux fraises de nos illusions.
+Et une derniere pour la route.
