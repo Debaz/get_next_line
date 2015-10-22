@@ -6,7 +6,7 @@
 /*   By: klescaud <klescaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/21 09:24:31 by klescaud          #+#    #+#             */
-/*   Updated: 2015/10/21 18:49:18 by Debaz            ###   ########.fr       */
+/*   Updated: 2015/10/22 10:24:22 by Debaz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,9 @@ int		main(void)
 	int		ret;
 
 	ret = 0;
-	fd = open("./fichiertest.txt", O_RDONLY);
+	fd = 0;
 	while ((ret = get_next_line(fd, line)) > 0)
 	{
-//		ft_putendl(ft_strjoin("ret vaut", ft_itoa(ret)));
 		ft_putendl(*line);
 	}
 	return (1);
